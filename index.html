@@ -24,6 +24,17 @@
         <span class="ms-2">game-night</span>
       </a>
     </nav>
+    
+    <form onsubmit="app.playersController.addPlayer()">
+      <div>
+        <label for="name">Player Name:</label>
+        <input type="text" minlength="2" maxlength="15" name="name" required />
+      </div>
+      <div>
+        <button type="submit">Add Player</button>
+      </div>
+    </form>
+
   </header>
   <main>
     <div class="container-fluid">
