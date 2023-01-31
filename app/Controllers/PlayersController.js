@@ -1,8 +1,10 @@
 import { appState } from "../AppState.js";
+import { playersService } from "../Services/PlayersService.js";
+import {getFormData} from "../Utils/FormHandler.js"
 
 
 export class PlayersController {
-    drawPlayer() {
+    drawPlayers() {
         let players = appState.players
         console.log('drawing players', players);
         let names = ''

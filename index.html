@@ -25,21 +25,23 @@
       </a>
     </nav>
     
-    <form onsubmit="app.playersController.addPlayer()">
-      <div>
-        <label for="name">Player Name:</label>
-        <input type="text" minlength="2" maxlength="15" name="name" required />
-      </div>
-      <div>
-        <button type="submit">Add Player</button>
-      </div>
-    </form>
+    
 
   </header>
   <main>
     <div class="container-fluid">
+      <form class="row" onsubmit="app.playersController.addPlayer()">
+        <div>
+          <label for="name">Player Name:</label>
+          <input type="text" minlength="2" maxlength="15" name="name" required />
+        </div>
+        <div>
+          <button type="submit">Add Player</button>
+        </div>
+      </form>
       <div class="row">
         <div class="col-12">
+          <div id='players' class="row"></div>
           <div id="app"></div>
         </div>
       </div>
